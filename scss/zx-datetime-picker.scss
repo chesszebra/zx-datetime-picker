@@ -1,0 +1,176 @@
+zebrux-datepicker {
+  background-color: #fff;
+  border: solid 1px #e7e9ed;
+  border-radius: 3px;
+  box-shadow: 0 4px 22px 0 rgba(0,0,0,0.05);
+  display: inline-block;
+  max-width: 310px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+zebrux-datepicker[inline] {
+  display: block;
+  position: relative;
+}
+
+.cz-picker[data-cz-picker-range="true"] {
+  max-width: 800px;
+}
+
+.cz-picker[data-cz-picker-range="true"] .cz-picker-range-lft {
+  display: inline-block;
+  max-width: 398px;
+}
+
+.cz-picker[data-cz-picker-range="true"] .cz-picker-range-rgt {
+  display: inline-block;
+  margin-left: 2px;
+  max-width: 398px;
+}
+
+.cz-picker-header {
+  align-items: center;
+  display: flex;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.cz-picker-header button {
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.cz-rangepicker {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cz-rangepicker li {
+  display: block;
+  padding: 3px 3px 0px 3px;
+}
+
+.cz-rangepicker button {
+  border: 0;
+  background: #E7E9ED;
+  display: block;
+  padding: 10px;
+  width: 100%;
+}
+
+.cz-picker-header button:active {
+  border-radius: 3px;
+  box-shadow: 0 0 0 2px rgba(10,146,151,0.1);
+}
+
+.cz-picker-header .cz-picker-header-label {
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.cz-picker-bar {
+  background-color: #E7E9ED;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cz-picker-bar span {
+  max-width: 14.28%;
+  padding: 0.25rem 0;
+  flex: 0 0 14.28%;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cz-picker-body {
+  background-color: #fafafa;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cz-picker-body .cz-picker-weeknumber {
+  background-color: #F9F9F9;
+  opacity: 0.2;
+}
+
+.cz-picker-body .cz-picker-disabled {
+  background-color: #F9F9F9;
+  opacity: 0.5;
+}
+
+.cz-picker-body button {
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  flex: 0 0 14.28%;
+  flex-direction: column;
+  max-width: 14.28%;
+  padding: 0.5rem 0;
+}
+
+.cz-picker-body button.cz-week-button {
+  background-color: #F9F9F9;
+}
+
+.cz-picker-body div:active {
+  background-color: #eeeff1;
+}
+
+.cz-picker-body .cz-picker-today {
+  background-color: #f26645;
+  color: #FFF;
+}
+
+.cz-picker-body .cz-picker-selected {
+  background-color: #E7E9ED;
+  color: #333;
+}
+
+[data-cz-picker-columns="3"] .cz-picker-bar span,
+[data-cz-picker-columns="3"] .cz-picker-body button {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+[data-cz-picker-columns="4"] .cz-picker-bar span,
+[data-cz-picker-columns="4"] .cz-picker-body button {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+[data-cz-picker-columns="7"] .cz-picker-bar span,
+[data-cz-picker-columns="7"] .cz-picker-body button {
+  flex: 0 0 14.28%;
+  max-width: 14.28%;
+}
+
+[data-cz-picker-columns="8"] .cz-picker-bar span,
+[data-cz-picker-columns="8"] .cz-picker-body button {
+  flex: 0 0 12.25%;
+  max-width: 12.25%;
+}
+
+[data-cz-picker-columns="10"] .cz-picker-bar span,
+[data-cz-picker-columns="10"] .cz-picker-body button {
+  flex: 0 0 10%;
+  max-width: 10%;
+}
